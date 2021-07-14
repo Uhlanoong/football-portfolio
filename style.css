@@ -1,0 +1,412 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/* universal */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* header starts */
+header {
+  background-color: #0082e6;
+}
+nav {
+  position: fixed;
+  top: 0;
+  height: 80px;
+}
+nav ul {
+  list-style: none;
+  float: left;
+  padding-left: 70px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  font-size: 15px;
+  color: white;
+  font-weight: 700;
+  padding: 7px 13px;
+}
+a.active,
+a:hover {
+  background: blue;
+  transition: 0.5s;
+}
+
+nav i {
+  padding: 7px;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+/* navbar ends */
+
+/* home starts */
+.home-section {
+  background: #2d25a0;
+  padding-top: 80px;
+  height: 100vh;
+}
+.first-part {
+  display: flex;
+}
+.break {
+  width: 50%;
+}
+.break.text {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 60px;
+  padding-top: 20px;
+}
+.link-button {
+  font-size: 20px;
+  background: #e02c6d;
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 10px;
+  align-items: flex-start;
+}
+i {
+  padding: 5px;
+}
+.break img {
+  width: 556px;
+  height: 438px;
+  top: 157px;
+  left: 1300px;
+}
+
+/* home ends */
+
+/* main-section */
+.grid {
+  margin: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+}
+.grid > article {
+  margin-left: 10px;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 40px gray;
+  width: 300px;
+  text-align: flex-start;
+}
+article img {
+  width: 250px;
+  height: 250px;
+}
+.grid > article img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.text {
+  padding: 0 20px 20px;
+}
+.text h3 {
+  text-transform: capitalize;
+}
+
+/* main section ends */
+
+/* highlight section */
+.highlight-section {
+  margin-top: 100px;
+}
+.third-part {
+  display: flex;
+  margin-left: 5%;
+}
+.split {
+  width: 50%;
+  padding: 10px;
+}
+.split h1 {
+  margin-top: 30px;
+  font-size: 50px;
+  font-weight: 700;
+}
+.split p {
+  margin-top: 20px;
+}
+.split img {
+  margin-top: 30px;
+  width: 567px;
+  height: 427px;
+}
+/* highlight-section ends */
+
+/* iframe */
+.goal {
+  padding-top: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: justify;
+}
+.frame {
+  margin-top: 60px;
+  padding-left: 25%;
+  background-color: azure;
+}
+iframe {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* iframe ends */
+
+/* footer section */
+footer {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.logo {
+  margin-left: 40%;
+}
+.logo img {
+  width: 250px;
+  height: 100px;
+  text-align: center;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 1rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  color: black;
+}
+.author {
+  text-align: center;
+}
+
+/* footer section ends */
+
+/* Mobile device */
+
+@media only screen and (max-width: 480px) {
+  .checkbtn {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 80%;
+    background: #2c3e50;
+    top: 80px;
+    left: 0;
+    text-align: center;
+  }
+  nav ul li {
+    display: none;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a:active {
+    background: none;
+    color: #0082e6;
+  }
+
+  .home-section {
+    height: 100vh;
+  }
+  .first-part {
+    display: flex;
+    flex-direction: column;
+  }
+  .break {
+    width: 100%;
+  }
+  .break.text {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #ffffff;
+    padding-left: 40px;
+    padding-top: 10px;
+  }
+
+  .break img {
+    width: 300px;
+    height: 200px;
+    padding-left: 7%;
+  }
+
+  .container {
+    width: 100%;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .third-part {
+    display: flex;
+    flex-direction: column;
+  }
+  .split {
+    width: 100%;
+    padding-left: 10px;
+    align-items: center;
+  }
+  .split p {
+    text-align: justify;
+  }
+  .split.link-button {
+    font-size: 12px;
+    background: #e02c6d;
+    color: #ffffff;
+    border-radius: 5px;
+  }
+  .split img {
+    width: 350px;
+    height: 250px;
+    padding-left: 7%;
+  }
+
+  .you-tube {
+    width: 30%;
+  }
+  .goal {
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+  }
+  iframe {
+    width: 380px;
+    height: 200px;
+  }
+
+  .logo {
+    padding-left: 2px;
+  }
+  .logo img {
+    width: 100px;
+    height: 80px;
+  }
+}
+/* mobile device ends */
+
+/* tablet device */
+@media only screen and (max-width: 768px) {
+  .home-section {
+    height: 100vh;
+  }
+  .first-part {
+    display: flex;
+  }
+  .break {
+    width: 50%;
+  }
+  .break.text {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #ffffff;
+    padding-left: 50px;
+    padding-top: 20px;
+  }
+
+  .break img {
+    margin-top: 50px;
+    width: 300px;
+    height: 200px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .third-part {
+    display: flex;
+  }
+  .split {
+    width: 50%;
+    padding-left: 10px;
+    align-items: center;
+  }
+  .split h1 {
+    font-size: 30px;
+  }
+  .split p {
+    font-size: 14px;
+    text-align: justify;
+  }
+  .split.link-button {
+    font-size: 7px;
+    background: #e02c6d;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 3px;
+  }
+  .split img {
+    width: 380px;
+    height: 300px;
+  }
+  .you-tube {
+    width: 80%;
+  }
+  .goal {
+    padding-top: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+  }
+  iframe {
+    width: 380px;
+    height: 200px;
+  }
+
+  .logo {
+    padding-left: 2px;
+  }
+  .logo img {
+    width: 150px;
+    height: 100px;
+  }
+}
+/* tablet ends */
